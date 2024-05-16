@@ -8,7 +8,10 @@ WORKDIR /app
 COPY . /app
 
 # Exclude README.md from being copied into the container
-COPY docs/README.md /tmp
+# COPY docs/README.md /tmp
+# COPY docs/README.md /tmp
+COPY README.md /tmp
+
 
 # Install Python dependencies
 RUN pip install -r requirements.txt
